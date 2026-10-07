@@ -2,14 +2,19 @@ package com.jacko.testmod;
 
 import java.util.function.Function;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
 public class ModItemIds {
-    public static void initialize() {}
+    public static void initialize() {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+            .register((creativeTab) -> creativeTab.accept(SUSPICIOUS_SUBSTANCE));
+    }
     
     public static ResourceKey<Item> create(String name) {
         // Create the item key.
