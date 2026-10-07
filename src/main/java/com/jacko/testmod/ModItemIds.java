@@ -9,6 +9,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 
 public class ModItemIds {
+    public static void initialize() {}
+    
     public static ResourceKey<Item> create(String name) {
         // Create the item key.
         return ResourceKey.create(Registries.ITEM, TestMod.id(name));
@@ -27,4 +29,6 @@ public class ModItemIds {
 
         return item;
     }
+
+    public static final Item SUSPICIOUS_SUBSTANCE = register(create("suspicious_substance"), Item::new, new Item.Properties());
 }
