@@ -3,15 +3,14 @@
 	"id": "test-mod",
 	"version": "${version}",
 	"name": "Test Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A test mod for learning Fabric mod development.",
 	"authors": [
-		"Me!"
+		"Jacko"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/JJ-Jacko/test-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/test-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
