@@ -22,7 +22,7 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		ModItemIds.initialize();
+		ModItems.initialize();;
 	}
 
 	public static Identifier id(String path) {
