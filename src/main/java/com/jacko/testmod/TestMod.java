@@ -22,7 +22,8 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		ModItems.initialize();;
+		ModItems.initialize();
+		ModBlocks.initialize();
 	}
 
 	public static Identifier id(String path) {
