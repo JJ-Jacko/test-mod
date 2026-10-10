@@ -26,6 +26,8 @@ public class ModItems {
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.POISON, 6 * 20, 0), 1.0F))
             .build()
     ));
+    // TODO: Custom Fuel 26.3 is using soft coding instead of hard coding.
+    public static final Item QUARK_GLUON_PLASMA = register(ModItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
     public static final Item SUSPICIOUS_SUBSTANCE = register(ModItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());
     
     public static Item register(

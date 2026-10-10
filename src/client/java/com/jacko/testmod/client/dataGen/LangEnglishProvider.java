@@ -15,6 +15,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(Provider registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("item.test-mod.poisonous_apple", "Poisonous Apple");
+        translationBuilder.add("item.test-mod.quark_gluon_plasma", "Quark Gluon Plasma");
         translationBuilder.add("item.test-mod.suspicious_substance", "Suspicious Substance");
     }
 }
