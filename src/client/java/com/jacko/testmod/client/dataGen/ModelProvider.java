@@ -1,5 +1,6 @@
 package com.jacko.testmod.client.dataGen;
 
+import com.jacko.testmod.ModBlocks;
 import com.jacko.testmod.ModItems;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -16,6 +17,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(ModBlocks.CONDENSED_DIRT);
     }
 
     @Override
