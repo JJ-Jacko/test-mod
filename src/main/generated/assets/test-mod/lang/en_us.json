@@ -2,5 +2,6 @@
   "block.test-mod.condensed_dirt": "Condensed Dirt",
   "item.test-mod.poisonous_apple": "Poisonous Apple",
   "item.test-mod.quark_gluon_plasma": "Quark Gluon Plasma",
-  "item.test-mod.suspicious_substance": "Suspicious Substance"
+  "item.test-mod.suspicious_substance": "Suspicious Substance",
+  "test_mod_items.test-mod": "Test Mod Items"
 }

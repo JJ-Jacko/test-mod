@@ -21,5 +21,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.POISONOUS_APPLE, "Poisonous Apple");
         translationBuilder.add(ModItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");
         translationBuilder.add(ModItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
+
+        translationBuilder.add("test_mod_items.test-mod", "Test Mod Items");
     }
 }
