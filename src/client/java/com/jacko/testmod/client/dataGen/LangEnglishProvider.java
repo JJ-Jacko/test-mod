@@ -18,9 +18,13 @@ public class LangEnglishProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(Provider registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModBlocks.CONDENSED_DIRT, "Condensed Dirt");
+        translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
+        translationBuilder.add(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, "Deepslate Ice Ether Ore");
+        
         translationBuilder.add(ModItems.POISONOUS_APPLE, "Poisonous Apple");
         translationBuilder.add(ModItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");
         translationBuilder.add(ModItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
+        translationBuilder.add(ModItems.ICE_ETHER, "Ice Ether");
 
         translationBuilder.add("test_mod_items.test-mod", "Test Mod Items");
     }

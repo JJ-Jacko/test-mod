@@ -1,5 +1,8 @@
 {
   "block.test-mod.condensed_dirt": "Condensed Dirt",
+  "block.test-mod.deepslate_ice_ether_ore": "Deepslate Ice Ether Ore",
+  "block.test-mod.ice_ether_ore": "Ice Ether Ore",
+  "item.test-mod.ice_ether": "Ice Ether",
   "item.test-mod.poisonous_apple": "Poisonous Apple",
   "item.test-mod.quark_gluon_plasma": "Quark Gluon Plasma",
   "item.test-mod.suspicious_substance": "Suspicious Substance",

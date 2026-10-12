@@ -17,6 +17,16 @@ public class ModBlocks {
         Block::new,
         BlockBehaviour.Properties.of().sound(SoundType.GLASS)
     );
+    public static final Block ICE_ETHER_ORE = register(
+        ModBlockItemIds.ICE_ETHER_ORE,
+        Block::new,
+        BlockBehaviour.Properties.of().sound(SoundType.STONE)
+    );
+    public static final Block DEEPSLATE_ICE_ETHER_ORE = register(
+        ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE,
+        Block::new,
+        BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+    );
     
     private static Block register(
             ResourceKey<Block> id,

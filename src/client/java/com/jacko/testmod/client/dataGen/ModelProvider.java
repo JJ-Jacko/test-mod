@@ -18,6 +18,8 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.CONDENSED_DIRT);
+        blockModelGenerators.createTrivialCube(ModBlocks.ICE_ETHER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_ICE_ETHER_ORE);
     }
 
     @Override
@@ -25,5 +27,6 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.POISONOUS_APPLE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.QUARK_GLUON_PLASMA, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.SUSPICIOUS_SUBSTANCE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER, ModelTemplates.FLAT_ITEM);
     }
 }

@@ -1,5 +1,6 @@
 package com.jacko.testmod.client;
 
+import com.jacko.testmod.client.dataGen.BlockLootTableProvider;
 import com.jacko.testmod.client.dataGen.LangEnglishProvider;
 import com.jacko.testmod.client.dataGen.ModelProvider;
 
@@ -13,5 +14,6 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 		Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(LangEnglishProvider::new);
 		pack.addProvider(ModelProvider::new);
+		pack.addProvider(BlockLootTableProvider::new);
 	}
 }
