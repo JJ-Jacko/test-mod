@@ -1,6 +1,8 @@
 package com.jacko.testmod.client.dataGen;
 
 import com.jacko.testmod.ModBlocks;
+import com.jacko.testmod.ModItems;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
@@ -21,6 +23,10 @@ public class BlockLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
         dropSelf(ModBlocks.CONDENSED_DIRT);
+
+        dropWhenSilkTouch(ModBlocks.ICE_ETHER_ORE);
+        add(ModBlocks.ICE_ETHER_ORE, createOreDrop(ModBlocks.ICE_ETHER_ORE, ModItems.ICE_ETHER));
+        add(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, createOreDrop(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, ModItems.ICE_ETHER));
     }
 
     @Override
