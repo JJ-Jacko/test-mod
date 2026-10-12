@@ -1,6 +1,7 @@
 {
   "values": [
     "test-mod:ice_ether_ore",
-    "test-mod:deepslate_ice_ether_ore"
+    "test-mod:deepslate_ice_ether_ore",
+    "test-mod:ice_ether_block"
   ]
 }

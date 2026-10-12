@@ -20,6 +20,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CONDENSED_DIRT, "Condensed Dirt");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, "Deepslate Ice Ether Ore");
+        translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Block of Ice Ether");
         
         translationBuilder.add(ModItems.POISONOUS_APPLE, "Poisonous Apple");
         translationBuilder.add(ModItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");

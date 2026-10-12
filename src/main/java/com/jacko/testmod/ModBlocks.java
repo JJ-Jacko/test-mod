@@ -33,6 +33,14 @@ public class ModBlocks {
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
     );
+    public static final Block ICE_ETHER_BLOCK = register(
+        ModBlockItemIds.ICE_ETHER_BLOCK,
+        Block::new,
+        BlockBehaviour.Properties.of()
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .strength(5.0F, 6.0F)
+    );
     
     private static Block register(
             ResourceKey<Block> id,

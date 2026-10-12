@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.ICE_ETHER);
             output.accept(ModBlocks.ICE_ETHER_ORE);
             output.accept(ModBlocks.DEEPSLATE_ICE_ETHER_ORE);
+            output.accept(ModBlocks.ICE_ETHER_BLOCK);
         }))
         .build();
     

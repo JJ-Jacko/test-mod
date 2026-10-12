@@ -27,6 +27,7 @@ public class BlockLootTableProvider extends FabricBlockLootSubProvider {
         dropWhenSilkTouch(ModBlocks.ICE_ETHER_ORE);
         add(ModBlocks.ICE_ETHER_ORE, createOreDrop(ModBlocks.ICE_ETHER_ORE, ModItems.ICE_ETHER));
         add(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, createOreDrop(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, ModItems.ICE_ETHER));
+        dropSelf(ModBlocks.ICE_ETHER_BLOCK);
     }
 
     @Override

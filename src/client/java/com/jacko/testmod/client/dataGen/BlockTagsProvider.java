@@ -18,10 +18,12 @@ public class BlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(Provider provider) {
         builder(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(ModBlockItemIds.ICE_ETHER_ORE)
-            .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE);
+            .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
+            .add(ModBlockItemIds.ICE_ETHER_BLOCK);
             
         builder(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlockItemIds.ICE_ETHER_ORE)
-            .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE);
+            .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
+            .add(ModBlockItemIds.ICE_ETHER_BLOCK);
     }
 }

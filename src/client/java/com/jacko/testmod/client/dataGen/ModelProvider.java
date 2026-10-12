@@ -20,6 +20,7 @@ public class ModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.CONDENSED_DIRT);
         blockModelGenerators.createTrivialCube(ModBlocks.ICE_ETHER_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_ICE_ETHER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.ICE_ETHER_BLOCK);
     }
 
     @Override
