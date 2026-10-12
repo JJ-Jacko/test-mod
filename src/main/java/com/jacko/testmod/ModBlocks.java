@@ -20,12 +20,18 @@ public class ModBlocks {
     public static final Block ICE_ETHER_ORE = register(
         ModBlockItemIds.ICE_ETHER_ORE,
         Block::new,
-        BlockBehaviour.Properties.of().sound(SoundType.STONE)
+        BlockBehaviour.Properties.of()
+            .sound(SoundType.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(3.0F, 3.0F)
     );
     public static final Block DEEPSLATE_ICE_ETHER_ORE = register(
         ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE,
         Block::new,
-        BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE)
+        BlockBehaviour.Properties.of()
+            .sound(SoundType.DEEPSLATE)
+            .requiresCorrectToolForDrops()
+            .strength(4.5F, 3.0F)
     );
     
     private static Block register(
