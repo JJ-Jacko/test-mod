@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "test-mod:raw_ice_ether_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "test-mod:raw_ice_ether"
+  }
+}
