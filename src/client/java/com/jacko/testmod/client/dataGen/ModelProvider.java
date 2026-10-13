@@ -20,7 +20,16 @@ public class ModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.CONDENSED_DIRT);
         blockModelGenerators.createTrivialCube(ModBlocks.ICE_ETHER_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_ICE_ETHER_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.ICE_ETHER_BLOCK);
+        blockModelGenerators.family(ModBlocks.ICE_ETHER_BLOCK)
+            .stairs(ModBlocks.ICE_ETHER_STAIRS)
+            .slab(ModBlocks.ICE_ETHER_SLAB)
+            .button(ModBlocks.ICE_ETHER_BUTTON)
+            .pressurePlate(ModBlocks.ICE_ETHER_PRESSURE_PLATE)
+            .fence(ModBlocks.ICE_ETHER_FENCE)
+            .fenceGate(ModBlocks.ICE_ETHER_FENCE_GATE)
+            .wall(ModBlocks.ICE_ETHER_WALL);
+        blockModelGenerators.createDoor(ModBlocks.ICE_ETHER_DOOR);
+        blockModelGenerators.createTrapdoor(ModBlocks.ICE_ETHER_TRAPDOOR);
     }
 
     @Override

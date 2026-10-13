@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "test-mod:block/ice_ether_pressure_plate"
+    },
+    "powered=true": {
+      "model": "test-mod:block/ice_ether_pressure_plate_down"
+    }
+  }
+}

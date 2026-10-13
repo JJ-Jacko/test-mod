@@ -19,11 +19,44 @@ public class BlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         builder(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(ModBlockItemIds.ICE_ETHER_ORE)
             .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
-            .add(ModBlockItemIds.ICE_ETHER_BLOCK);
+            .add(ModBlockItemIds.ICE_ETHER_BLOCK)
+            .add(ModBlockItemIds.ICE_ETHER_STAIRS)
+            .add(ModBlockItemIds.ICE_ETHER_SLAB)
+            .add(ModBlockItemIds.ICE_ETHER_BUTTON)
+            .add(ModBlockItemIds.ICE_ETHER_PRESSURE_PLATE)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE_GATE)
+            .add(ModBlockItemIds.ICE_ETHER_WALL)
+            .add(ModBlockItemIds.ICE_ETHER_DOOR)
+            .add(ModBlockItemIds.ICE_ETHER_TRAPDOOR);
             
         builder(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlockItemIds.ICE_ETHER_ORE)
             .add(ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
-            .add(ModBlockItemIds.ICE_ETHER_BLOCK);
+            .add(ModBlockItemIds.ICE_ETHER_BLOCK)
+            .add(ModBlockItemIds.ICE_ETHER_STAIRS)
+            .add(ModBlockItemIds.ICE_ETHER_SLAB)
+            .add(ModBlockItemIds.ICE_ETHER_BUTTON)
+            .add(ModBlockItemIds.ICE_ETHER_PRESSURE_PLATE)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE_GATE)
+            .add(ModBlockItemIds.ICE_ETHER_WALL)
+            .add(ModBlockItemIds.ICE_ETHER_DOOR)
+            .add(ModBlockItemIds.ICE_ETHER_TRAPDOOR);
+        
+        builder(BlockTags.FENCES)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE);
+        
+        builder(BlockTags.FENCE_GATES)
+            .add(ModBlockItemIds.ICE_ETHER_FENCE_GATE);
+        
+        builder(BlockTags.WALLS)
+            .add(ModBlockItemIds.ICE_ETHER_WALL);
+        
+        builder(BlockTags.DOORS)
+            .add(ModBlockItemIds.ICE_ETHER_DOOR);
+
+        builder(BlockTags.TRAPDOORS)
+            .add(ModBlockItemIds.ICE_ETHER_TRAPDOOR);
     }
 }
