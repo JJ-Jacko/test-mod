@@ -30,6 +30,7 @@ public class ModItems {
     public static final Item QUARK_GLUON_PLASMA = register(ModItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
     public static final Item SUSPICIOUS_SUBSTANCE = register(ModItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());
     public static final Item ICE_ETHER = register(ModItemIds.ICE_ETHER, Item::new, new Item.Properties());
+    public static final Item RAW_ICE_ETHER = register(ModItemIds.RAW_ICE_ETHER, Item::new, new Item.Properties());
     
     public static Item register(
         ResourceKey<Item> itemKey,

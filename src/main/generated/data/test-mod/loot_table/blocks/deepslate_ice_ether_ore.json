@@ -23,7 +23,7 @@
                   "type": "minecraft:explosion_decay"
                 }
               ],
-              "name": "test-mod:ice_ether"
+              "name": "test-mod:raw_ice_ether"
             }
           ]
         }

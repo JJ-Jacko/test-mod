@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
             output.accept(ModBlocks.CONDENSED_DIRT);
 
             output.accept(ModItems.ICE_ETHER);
+            output.accept(ModItems.RAW_ICE_ETHER);
             output.accept(ModBlocks.ICE_ETHER_ORE);
             output.accept(ModBlocks.DEEPSLATE_ICE_ETHER_ORE);
             output.accept(ModBlocks.ICE_ETHER_BLOCK);

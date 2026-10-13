@@ -35,6 +35,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");
         translationBuilder.add(ModItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
         translationBuilder.add(ModItems.ICE_ETHER, "Ice Ether");
+        translationBuilder.add(ModItems.RAW_ICE_ETHER, "Raw Ice Ether");
 
         translationBuilder.add("test_mod_items.test-mod", "Test Mod Items");
     }
