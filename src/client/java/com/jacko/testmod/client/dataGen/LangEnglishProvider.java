@@ -20,6 +20,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
         builder.add(ModBlocks.CONDENSED_DIRT, "Condensed Dirt");
         builder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
         builder.add(ModBlocks.DEEPSLATE_ICE_ETHER_ORE, "Deepslate Ice Ether Ore");
+        builder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Block of Raw Ice Ether");
         builder.add(ModBlocks.ICE_ETHER_BLOCK, "Block of Ice Ether");
         builder.add(ModBlocks.ICE_ETHER_STAIRS, "Ice Ether Stairs");
         builder.add(ModBlocks.ICE_ETHER_SLAB, "Ice Ether Slab");

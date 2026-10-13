@@ -44,6 +44,13 @@ public class ModBlocks {
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
     );
+    public static final Block RAW_ICE_ETHER_BLOCK = register(
+        ModBlockItemIds.RAW_ICE_ETHER_BLOCK,
+        Block::new,
+        BlockBehaviour.Properties.of()
+            .requiresCorrectToolForDrops()
+            .strength(2.0F, 2.0F)
+    );
     public static final Block ICE_ETHER_BLOCK = register(
         ModBlockItemIds.ICE_ETHER_BLOCK,
         Block::new,
