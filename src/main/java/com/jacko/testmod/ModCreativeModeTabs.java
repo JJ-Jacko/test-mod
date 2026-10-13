@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.POISONOUS_APPLE);
             output.accept(ModItems.QUARK_GLUON_PLASMA);
             output.accept(ModItems.SUSPICIOUS_SUBSTANCE);
+            output.accept(ModItems.ANTHRACITE);
             output.accept(ModBlocks.CONDENSED_DIRT);
 
             output.accept(ModItems.ICE_ETHER);

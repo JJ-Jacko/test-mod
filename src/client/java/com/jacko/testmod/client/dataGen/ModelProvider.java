@@ -40,5 +40,6 @@ public class ModelProvider extends FabricModelProvider {
         generators.generateFlatItem(ModItems.SUSPICIOUS_SUBSTANCE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(ModItems.ICE_ETHER, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(ModItems.RAW_ICE_ETHER, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(ModItems.ANTHRACITE, ModelTemplates.FLAT_ITEM);
     }
 }

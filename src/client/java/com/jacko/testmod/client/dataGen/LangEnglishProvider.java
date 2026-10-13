@@ -37,6 +37,7 @@ public class LangEnglishProvider extends FabricLanguageProvider {
         builder.add(ModItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
         builder.add(ModItems.ICE_ETHER, "Ice Ether");
         builder.add(ModItems.RAW_ICE_ETHER, "Raw Ice Ether");
+        builder.add(ModItems.ANTHRACITE, "Anthracite");
 
         builder.add("test_mod_items.test-mod", "Test Mod Items");
     }

@@ -13,6 +13,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 public class ModItems {
     public static final Item POISONOUS_APPLE = register(ModItemIds.POISONOUS_APPLE, Item::new, new Item.Properties().food(
@@ -26,11 +27,13 @@ public class ModItems {
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.POISON, 6 * 20, 0), 1.0F))
             .build()
     ));
-    // TODO: Custom Fuel 26.3 is using soft coding instead of hard coding.
     public static final Item QUARK_GLUON_PLASMA = register(ModItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
     public static final Item SUSPICIOUS_SUBSTANCE = register(ModItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());
     public static final Item ICE_ETHER = register(ModItemIds.ICE_ETHER, Item::new, new Item.Properties());
     public static final Item RAW_ICE_ETHER = register(ModItemIds.RAW_ICE_ETHER, Item::new, new Item.Properties());
+    public static final Item ANTHRACITE = register(ModItemIds.ANTHRACITE, Item::new,
+        new Item.Properties().cookingFuel(ContextIntProviders.COOKING_TIME_COAL)
+    );
     
     public static Item register(
         ResourceKey<Item> itemKey,
