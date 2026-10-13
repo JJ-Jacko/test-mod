@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "test-mod:ice_ether"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "test-mod:ice_ether_pressure_plate"
+  }
+}
