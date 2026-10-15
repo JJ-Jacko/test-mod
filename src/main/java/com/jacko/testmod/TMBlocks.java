@@ -1,4 +1,5 @@
 package com.jacko.testmod;
+
 import java.util.function.Function;
 
 import net.minecraft.core.Registry;
@@ -22,14 +23,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
-public class ModBlocks {
+public class TMBlocks {
     public static final Block CONDENSED_DIRT = register(
-        ModBlockItemIds.CONDENSED_DIRT,
+        TMBlockItemIds.CONDENSED_DIRT,
         Block::new,
         BlockBehaviour.Properties.of().sound(SoundType.GLASS)
     );
     public static final Block ICE_ETHER_ORE = register(
-        ModBlockItemIds.ICE_ETHER_ORE,
+        TMBlockItemIds.ICE_ETHER_ORE,
         Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.STONE)
@@ -37,7 +38,7 @@ public class ModBlocks {
             .strength(3.0F, 3.0F)
     );
     public static final Block DEEPSLATE_ICE_ETHER_ORE = register(
-        ModBlockItemIds.DEEPSLATE_ICE_ETHER_ORE,
+        TMBlockItemIds.DEEPSLATE_ICE_ETHER_ORE,
         Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.DEEPSLATE)
@@ -45,14 +46,14 @@ public class ModBlocks {
             .strength(4.5F, 3.0F)
     );
     public static final Block RAW_ICE_ETHER_BLOCK = register(
-        ModBlockItemIds.RAW_ICE_ETHER_BLOCK,
+        TMBlockItemIds.RAW_ICE_ETHER_BLOCK,
         Block::new,
         BlockBehaviour.Properties.of()
             .requiresCorrectToolForDrops()
             .strength(2.0F, 2.0F)
     );
     public static final Block ICE_ETHER_BLOCK = register(
-        ModBlockItemIds.ICE_ETHER_BLOCK,
+        TMBlockItemIds.ICE_ETHER_BLOCK,
         Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.METAL)
@@ -60,47 +61,47 @@ public class ModBlocks {
             .strength(5.0F, 6.0F)
     );
     public static final Block ICE_ETHER_STAIRS = register(
-        ModBlockItemIds.ICE_ETHER_STAIRS,
+        TMBlockItemIds.ICE_ETHER_STAIRS,
         p -> new StairBlock(ICE_ETHER_BLOCK.defaultBlockState(), p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_SLAB = register(
-        ModBlockItemIds.ICE_ETHER_SLAB,
+        TMBlockItemIds.ICE_ETHER_SLAB,
         SlabBlock::new,
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_BUTTON = register(
-        ModBlockItemIds.ICE_ETHER_BUTTON,
+        TMBlockItemIds.ICE_ETHER_BUTTON,
         p -> new ButtonBlock(BlockSetType.STONE, 20, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_PRESSURE_PLATE = register(
-        ModBlockItemIds.ICE_ETHER_PRESSURE_PLATE,
+        TMBlockItemIds.ICE_ETHER_PRESSURE_PLATE,
         p -> new PressurePlateBlock(BlockSetType.STONE, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_FENCE = register(
-        ModBlockItemIds.ICE_ETHER_FENCE,
+        TMBlockItemIds.ICE_ETHER_FENCE,
         FenceBlock::new,
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_FENCE_GATE = register(
-        ModBlockItemIds.ICE_ETHER_FENCE_GATE,
+        TMBlockItemIds.ICE_ETHER_FENCE_GATE,
         p -> new FenceGateBlock(WoodType.OAK, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_WALL = register(
-        ModBlockItemIds.ICE_ETHER_WALL,
+        TMBlockItemIds.ICE_ETHER_WALL,
         WallBlock::new,
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_DOOR = register(
-        ModBlockItemIds.ICE_ETHER_DOOR,
+        TMBlockItemIds.ICE_ETHER_DOOR,
         p -> new DoorBlock(BlockSetType.STONE, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );
     public static final Block ICE_ETHER_TRAPDOOR = register(
-        ModBlockItemIds.ICE_ETHER_TRAPDOOR,
+        TMBlockItemIds.ICE_ETHER_TRAPDOOR,
         p -> new TrapDoorBlock(BlockSetType.STONE, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
     );

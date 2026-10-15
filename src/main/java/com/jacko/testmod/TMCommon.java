@@ -7,7 +7,7 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TestMod implements ModInitializer {
+public class TMCommon implements ModInitializer {
 	public static final String MOD_ID = "test-mod";
 
 	// This logger is used to write text to the console and the log file.
@@ -22,9 +22,9 @@ public class TestMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		ModItems.initialize();
-		ModBlocks.initialize();
-		ModCreativeModeTabs.initialize();
+		TMItems.initialize();
+		TMBlocks.initialize();
+		TMCreativeModeTabs.initialize();
 	}
 
 	public static Identifier id(String path) {

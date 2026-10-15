@@ -14,13 +14,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.jacko.testmod.TestMod"
+			"com.jacko.testmod.TMCommon"
 		],
 		"client": [
-			"com.jacko.testmod.client.TestModClient"
+			"com.jacko.testmod.client.TMClient"
 		],
 		"fabric-datagen": [
-			"com.jacko.testmod.client.TestModDataGenerator"
+			"com.jacko.testmod.client.TMData"
 		]
 	},
 	"mixins": [

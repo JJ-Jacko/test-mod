@@ -15,8 +15,8 @@ import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
-public class ModItems {
-    public static final Item POISONOUS_APPLE = register(ModItemIds.POISONOUS_APPLE, Item::new, new Item.Properties().food(
+public class TMItems {
+    public static final Item POISONOUS_APPLE = register(TMItemIds.POISONOUS_APPLE, Item::new, new Item.Properties().food(
         new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(0.1F)
@@ -27,11 +27,11 @@ public class ModItems {
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.POISON, 6 * 20, 0), 1.0F))
             .build()
     ));
-    public static final Item QUARK_GLUON_PLASMA = register(ModItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
-    public static final Item SUSPICIOUS_SUBSTANCE = register(ModItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());
-    public static final Item ICE_ETHER = register(ModItemIds.ICE_ETHER, Item::new, new Item.Properties());
-    public static final Item RAW_ICE_ETHER = register(ModItemIds.RAW_ICE_ETHER, Item::new, new Item.Properties());
-    public static final Item ANTHRACITE = register(ModItemIds.ANTHRACITE, Item::new,
+    public static final Item QUARK_GLUON_PLASMA = register(TMItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
+    public static final Item SUSPICIOUS_SUBSTANCE = register(TMItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());
+    public static final Item ICE_ETHER = register(TMItemIds.ICE_ETHER, Item::new, new Item.Properties());
+    public static final Item RAW_ICE_ETHER = register(TMItemIds.RAW_ICE_ETHER, Item::new, new Item.Properties());
+    public static final Item ANTHRACITE = register(TMItemIds.ANTHRACITE, Item::new,
         new Item.Properties().cookingFuel(ContextIntProviders.COOKING_TIME_COAL)
     );
     
