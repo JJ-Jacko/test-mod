@@ -10,7 +10,6 @@
 	"contact": {
 		"sources": "https://github.com/JJ-Jacko/test-mod"
 	},
-	"license": "MIT",
 	"icon": "assets/test-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
