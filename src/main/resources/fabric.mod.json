@@ -16,19 +16,12 @@
 		"main": [
 			"com.jacko.testmod.TMCommon"
 		],
-		"client": [
-			"com.jacko.testmod.client.TMClient"
-		],
 		"fabric-datagen": [
-			"com.jacko.testmod.client.TMData"
+			"com.jacko.testmod.TMData"
 		]
 	},
 	"mixins": [
-		"test-mod.mixins.json",
-		{
-			"config": "test-mod.client.mixins.json",
-			"environment": "client"
-		}
+		"test-mod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",

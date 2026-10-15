@@ -1,10 +1,10 @@
-package com.jacko.testmod.client;
+package com.jacko.testmod;
 
-import com.jacko.testmod.client.dataGen.TMBlockLootTableProvider;
-import com.jacko.testmod.client.dataGen.TMBlockTagsProvider;
-import com.jacko.testmod.client.dataGen.TMLangENProvider;
-import com.jacko.testmod.client.dataGen.TMRecipesProvider;
-import com.jacko.testmod.client.dataGen.TMModelProvider;
+import com.jacko.testmod.dataGen.TMBlockLootTableProvider;
+import com.jacko.testmod.dataGen.TMBlockTagsProvider;
+import com.jacko.testmod.dataGen.TMLangENProvider;
+import com.jacko.testmod.dataGen.TMRecipesProvider;
+import com.jacko.testmod.dataGen.TMModelProvider;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

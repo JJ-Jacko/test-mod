@@ -1,4 +1,4 @@
-package com.jacko.testmod.client.dataGen;
+package com.jacko.testmod.dataGen;
 
 import com.jacko.testmod.TMBlocks;
 import com.jacko.testmod.TMItems;

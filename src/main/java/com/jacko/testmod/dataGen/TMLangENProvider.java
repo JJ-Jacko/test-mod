@@ -1,4 +1,4 @@
-package com.jacko.testmod.client.dataGen;
+package com.jacko.testmod.dataGen;
 
 import java.util.concurrent.CompletableFuture;
 

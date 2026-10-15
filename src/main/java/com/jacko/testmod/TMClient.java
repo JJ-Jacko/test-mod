@@ -1,4 +1,4 @@
-package com.jacko.testmod.client;
+package com.jacko.testmod;
 
 import net.fabricmc.api.ClientModInitializer;
 
