@@ -5,6 +5,7 @@ import java.util.concurrent.CompletableFuture;
 
 import com.jacko.testmod.ModBlocks;
 import com.jacko.testmod.ModItems;
+import com.jacko.testmod.TestMod;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -12,9 +13,11 @@ import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 
@@ -109,6 +112,26 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 
                 oreSmelting(ICE_ETHER_LIST, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ICE_ETHER, 0.7F, 200, "ice_ether");
                 oreBlasting(ICE_ETHER_LIST, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ICE_ETHER, 0.7F, 100, "ice_ether");
+
+                // Smoker
+                SimpleCookingRecipeBuilder.smoking(
+                    Ingredient.of(Items.ROTTEN_FLESH),
+                    RecipeCategory.MISC,
+                    Items.LEATHER,
+                    0.7F, 100
+                )
+                    .unlockedBy(getHasName(Items.ROTTEN_FLESH), has(Items.ROTTEN_FLESH))
+                    .save(output, TestMod.id("smoker_rotten_flesh_to_leather").toString());
+                
+                // Campfire
+                SimpleCookingRecipeBuilder.campfireCooking(
+                    Ingredient.of(Items.ROTTEN_FLESH),
+                    RecipeCategory.MISC,
+                    Items.LEATHER,
+                    0.7F, 100
+                )
+                    .unlockedBy(getHasName(Items.ROTTEN_FLESH), has(Items.ROTTEN_FLESH))
+                    .save(output, TestMod.id("campfire_rotten_flesh_to_leather").toString());
             }
         };
     }
