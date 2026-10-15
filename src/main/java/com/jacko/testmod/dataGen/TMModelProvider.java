@@ -1,7 +1,7 @@
 package com.jacko.testmod.dataGen;
 
-import com.jacko.testmod.TMBlocks;
-import com.jacko.testmod.TMItems;
+import com.jacko.testmod.block.TMBlocks;
+import com.jacko.testmod.item.TMItems;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;

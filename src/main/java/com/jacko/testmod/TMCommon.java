@@ -7,6 +7,9 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.jacko.testmod.block.TMBlocks;
+import com.jacko.testmod.item.TMItems;
+
 public class TMCommon implements ModInitializer {
 	public static final String MOD_ID = "test-mod";
 

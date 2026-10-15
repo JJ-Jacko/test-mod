@@ -1,5 +1,8 @@
 package com.jacko.testmod;
 
+import com.jacko.testmod.block.TMBlocks;
+import com.jacko.testmod.item.TMItems;
+
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

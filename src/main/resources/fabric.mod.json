@@ -17,7 +17,7 @@
 			"com.jacko.testmod.TMCommon"
 		],
 		"fabric-datagen": [
-			"com.jacko.testmod.TMData"
+			"com.jacko.testmod.dataGen.TMData"
 		]
 	},
 	"mixins": [

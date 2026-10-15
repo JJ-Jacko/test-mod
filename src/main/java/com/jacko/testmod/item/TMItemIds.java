@@ -1,4 +1,6 @@
-package com.jacko.testmod;
+package com.jacko.testmod.item;
+
+import com.jacko.testmod.TMCommon;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

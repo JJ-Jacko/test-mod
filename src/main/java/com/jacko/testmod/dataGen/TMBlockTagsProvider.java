@@ -2,7 +2,7 @@ package com.jacko.testmod.dataGen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.jacko.testmod.TMBlockItemIds;
+import com.jacko.testmod.block.TMBlockItemIds;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;

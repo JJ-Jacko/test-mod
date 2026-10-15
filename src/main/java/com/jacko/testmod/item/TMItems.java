@@ -1,4 +1,4 @@
-package com.jacko.testmod;
+package com.jacko.testmod.item;
 
 import java.util.function.Function;
 

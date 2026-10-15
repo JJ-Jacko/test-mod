@@ -1,4 +1,4 @@
-package com.jacko.testmod;
+package com.jacko.testmod.block;
 
 import java.util.function.Function;
 

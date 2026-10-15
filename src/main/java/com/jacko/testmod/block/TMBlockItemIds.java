@@ -1,4 +1,6 @@
-package com.jacko.testmod;
+package com.jacko.testmod.block;
+
+import com.jacko.testmod.TMCommon;
 
 import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.Identifier;
