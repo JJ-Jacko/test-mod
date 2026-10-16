@@ -40,6 +40,7 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMItems.ICE_ETHER, "Ice Ether");
         builder.add(TMItems.RAW_ICE_ETHER, "Raw Ice Ether");
         builder.add(TMItems.ANTHRACITE, "Anthracite");
+        builder.add(TMItems.PROSPECTOR, "Prospector");
 
         builder.add("test_mod_items.test-mod", "Test Mod Items");
     }

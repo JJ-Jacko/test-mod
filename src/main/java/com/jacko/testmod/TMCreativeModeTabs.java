@@ -30,8 +30,9 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.QUARK_GLUON_PLASMA);
             output.accept(TMItems.SUSPICIOUS_SUBSTANCE);
             output.accept(TMItems.ANTHRACITE);
+            output.accept(TMItems.PROSPECTOR);
+            
             output.accept(TMBlocks.CONDENSED_DIRT);
-
             output.accept(TMItems.ICE_ETHER);
             output.accept(TMItems.RAW_ICE_ETHER);
             output.accept(TMBlocks.ICE_ETHER_ORE);

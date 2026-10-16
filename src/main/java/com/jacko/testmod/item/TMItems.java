@@ -3,6 +3,7 @@ package com.jacko.testmod.item;
 import java.util.function.Function;
 
 import com.jacko.testmod.TMCommon;
+import com.jacko.testmod.item.custom.ProspectorItem;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
@@ -37,6 +38,11 @@ public class TMItems {
     public static final Item RAW_ICE_ETHER = register(TMItemIds.RAW_ICE_ETHER, Item::new, new Item.Properties());
     public static final Item ANTHRACITE = register(TMItemIds.ANTHRACITE, Item::new,
         new Item.Properties().cookingFuel(ContextIntProviders.COOKING_TIME_COAL)
+    );
+    public static final Item PROSPECTOR = register(
+        TMItemIds.PROSPECTOR,
+        ProspectorItem::new,
+        new Item.Properties().durability(127)
     );
     
     public static Item register(

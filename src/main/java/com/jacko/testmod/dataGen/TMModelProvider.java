@@ -43,5 +43,6 @@ public class TMModelProvider extends FabricModelProvider {
         generators.generateFlatItem(TMItems.ICE_ETHER, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.RAW_ICE_ETHER, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.ANTHRACITE, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.PROSPECTOR, ModelTemplates.FLAT_ITEM);
     }
 }
