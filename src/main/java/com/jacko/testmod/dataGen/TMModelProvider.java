@@ -34,7 +34,10 @@ public class TMModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators generators) {
+        generators.generateFlatItem(TMItems.CHEESE, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.CORN, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.POISONOUS_APPLE, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.STRAWBERRY, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.QUARK_GLUON_PLASMA, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.SUSPICIOUS_SUBSTANCE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.ICE_ETHER, ModelTemplates.FLAT_ITEM);

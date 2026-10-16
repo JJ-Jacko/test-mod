@@ -21,7 +21,10 @@ public class TMCreativeModeTabs {
         .icon(() -> new ItemStack(TMItems.POISONOUS_APPLE))
         .title(Component.translatable("test_mod_items.test-mod"))
         .displayItems(((parameters, output) -> {
+            output.accept(TMItems.CHEESE);
+            output.accept(TMItems.CORN);
             output.accept(TMItems.POISONOUS_APPLE);
+            output.accept(TMItems.STRAWBERRY);
             output.accept(TMItems.QUARK_GLUON_PLASMA);
             output.accept(TMItems.SUSPICIOUS_SUBSTANCE);
             output.accept(TMItems.ANTHRACITE);

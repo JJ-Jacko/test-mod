@@ -11,10 +11,25 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 public class TMItems {
+    public static final Item CHEESE = register(
+        TMItemIds.CHEESE,
+        Item::new,
+        new Item.Properties().food(TMFoods.CHEESE, TMConsumables.CHEESE)
+    );
+    public static final Item CORN = register(
+        TMItemIds.CORN,
+        Item::new,
+        new Item.Properties().food(TMFoods.CORN)
+    );
     public static final Item POISONOUS_APPLE = register(
         TMItemIds.POISONOUS_APPLE,
         Item::new,
         new Item.Properties().food(TMFoods.POISONOUS_APPLE, TMConsumables.POISONOUS_APPLE)
+    );
+    public static final Item STRAWBERRY = register(
+        TMItemIds.STRAWBERRY,
+        Item::new,
+        new Item.Properties().food(TMFoods.STRAWBERRY)
     );
     public static final Item QUARK_GLUON_PLASMA = register(TMItemIds.QUARK_GLUON_PLASMA, Item::new, new Item.Properties());
     public static final Item SUSPICIOUS_SUBSTANCE = register(TMItemIds.SUSPICIOUS_SUBSTANCE, Item::new, new Item.Properties());

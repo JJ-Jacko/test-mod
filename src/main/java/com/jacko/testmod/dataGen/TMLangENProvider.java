@@ -31,7 +31,10 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMBlocks.ICE_ETHER_DOOR, "Ice Ether Door");
         builder.add(TMBlocks.ICE_ETHER_TRAPDOOR, "Ice Ether Trapdoor");
         
+        builder.add(TMItems.CHEESE, "Cheese");
+        builder.add(TMItems.CORN, "Corn");
         builder.add(TMItems.POISONOUS_APPLE, "Poisonous Apple");
+        builder.add(TMItems.STRAWBERRY, "Strawberry");
         builder.add(TMItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");
         builder.add(TMItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
         builder.add(TMItems.ICE_ETHER, "Ice Ether");

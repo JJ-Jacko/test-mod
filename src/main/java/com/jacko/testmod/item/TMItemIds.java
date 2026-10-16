@@ -7,7 +7,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 
 public class TMItemIds {
+    public static final ResourceKey<Item> CHEESE = create("cheese"); 
+    public static final ResourceKey<Item> CORN = create("corn"); 
     public static final ResourceKey<Item> POISONOUS_APPLE = create("poisonous_apple"); 
+    public static final ResourceKey<Item> STRAWBERRY = create("strawberry"); 
     public static final ResourceKey<Item> QUARK_GLUON_PLASMA = create("quark_gluon_plasma"); 
     public static final ResourceKey<Item> SUSPICIOUS_SUBSTANCE = create("suspicious_substance"); 
     public static final ResourceKey<Item> ICE_ETHER = create("ice_ether"); 

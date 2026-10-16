@@ -9,9 +9,18 @@ import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
 public class TMConsumables {
+    // duration: 20 ticks = 1 second
+    // amplifier (level): 0, 1, 2 ... = I, II, III ...
+
+    public static final Consumable CHEESE = Consumables.defaultFood()
+        .onConsume(new ApplyStatusEffectsConsumeEffect(
+            List.of(
+                new MobEffectInstance(MobEffects.JUMP_BOOST, 10 * 20, 1),
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 15 * 20)
+            )
+        ))
+        .build();
     public static final Consumable POISONOUS_APPLE = Consumables.defaultFood()
-        // duration: 20 ticks = 1 second
-        // amplifier (level): 0, 1, 2 ... = I, II, III ...
         .onConsume(new ApplyStatusEffectsConsumeEffect(
             List.of(
                 new MobEffectInstance(MobEffects.POISON, 6 * 20, 1),
