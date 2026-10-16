@@ -16,9 +16,9 @@ public class TMCommon implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		TMItems.initialize();
-		TMBlocks.initialize();
-		TMCreativeModeTabs.initialize();
+		TMItems.init();
+		TMBlocks.init();
+		TMCreativeModeTabs.init();
 	}
 
 	public static Identifier id(String path) {

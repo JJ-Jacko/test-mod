@@ -2,6 +2,8 @@ package com.jacko.testmod.block;
 
 import java.util.function.Function;
 
+import com.jacko.testmod.TMCommon;
+
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
@@ -135,7 +137,7 @@ public class TMBlocks {
         return block;
     }
 
-    public static void initialize() {
-        
+    public static void init() {
+        TMCommon.LOGGER.info("Initializing blocks...");
     }
 }

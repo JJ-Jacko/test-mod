@@ -50,7 +50,9 @@ public class TMCreativeModeTabs {
         }))
         .build();
     
-    public static void initialize() {
+    public static void init() {
+        TMCommon.LOGGER.info("Initializing creative tabs...");
+        
         // Vanilla
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
             .register((creativeTab) -> creativeTab.accept(TMItems.SUSPICIOUS_SUBSTANCE));

@@ -2,6 +2,8 @@ package com.jacko.testmod.item;
 
 import java.util.function.Function;
 
+import com.jacko.testmod.TMCommon;
+
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -51,7 +53,7 @@ public class TMItems {
         return item;
     }
 
-    public static void initialize() {
-        
+    public static void init() {
+        TMCommon.LOGGER.info("Initializing items...");
     }
 }
