@@ -3,10 +3,8 @@ package com.jacko.testmod.item;
 import java.util.function.Function;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
@@ -54,7 +52,6 @@ public class TMItems {
     }
 
     public static void initialize() {
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-            .register((creativeTab) -> creativeTab.accept(SUSPICIOUS_SUBSTANCE));
+        
     }
 }

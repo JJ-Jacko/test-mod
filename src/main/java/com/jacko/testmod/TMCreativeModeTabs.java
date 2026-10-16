@@ -3,12 +3,14 @@ package com.jacko.testmod;
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 
 public class TMCreativeModeTabs {
@@ -49,6 +51,11 @@ public class TMCreativeModeTabs {
         .build();
     
     public static void initialize() {
+        // Vanilla
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+            .register((creativeTab) -> creativeTab.accept(TMItems.SUSPICIOUS_SUBSTANCE));
+        
+        // Mod
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TEST_MOD_ITEMS_TAB_KEY, TEST_MOD_ITEMS_TAB);
     }
 }
