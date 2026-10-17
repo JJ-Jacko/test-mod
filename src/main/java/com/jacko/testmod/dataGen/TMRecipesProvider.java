@@ -5,6 +5,7 @@ import java.util.concurrent.CompletableFuture;
 
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
+import com.jacko.testmod.tags.TMItemTags;
 import com.jacko.testmod.TMCommon;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -107,6 +108,11 @@ public class TMRecipesProvider extends FabricRecipeProvider {
                     .pattern("## ")
                     .pattern("## ")
                     .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
+                    .save(output);
+                shaped(RecipeCategory.MISC, Items.SUGAR)
+                    .define('#', TMItemTags.SUGER)
+                    .pattern("###")
+                    .unlockedBy("has_Item", has(TMItemTags.SUGER))
                     .save(output);
                 
                 

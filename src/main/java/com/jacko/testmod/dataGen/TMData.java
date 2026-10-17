@@ -12,6 +12,7 @@ public class TMData implements DataGeneratorEntrypoint {
 		pack.addProvider(TMModelProvider::new);
 		pack.addProvider(TMBlockLootTableProvider::new);
 		pack.addProvider(TMBlockTagsProvider::new);
+		pack.addProvider(TMItemTagsProvider::new);
 		pack.addProvider(TMRecipesProvider::new);
 	}
 }

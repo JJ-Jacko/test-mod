@@ -3,10 +3,12 @@ package com.jacko.testmod.dataGen;
 import java.util.concurrent.CompletableFuture;
 
 import com.jacko.testmod.block.TMBlockItemIds;
+import com.jacko.testmod.tags.TMBlockTags;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup.Provider;
+import net.minecraft.tags.BlockItemTags;
 import net.minecraft.tags.BlockTags;
 
 public class TMBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
@@ -16,6 +18,7 @@ public class TMBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
     @Override
     protected void addTags(Provider provider) {
+        // Vanilla
         builder(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(TMBlockItemIds.ICE_ETHER_ORE)
             .add(TMBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
@@ -60,5 +63,18 @@ public class TMBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         builder(BlockTags.TRAPDOORS)
             .add(TMBlockItemIds.ICE_ETHER_TRAPDOOR);
+        
+        // Mod
+        builder(TMBlockTags.ORE)
+            .add(TMBlockItemIds.ICE_ETHER_ORE)
+            .add(TMBlockItemIds.DEEPSLATE_ICE_ETHER_ORE)
+            .forceAddTag(BlockItemTags.COAL_ORES.block())
+            .forceAddTag(BlockItemTags.IRON_ORES.block())
+            .forceAddTag(BlockItemTags.GOLD_ORES.block())
+            .forceAddTag(BlockItemTags.DIAMOND_ORES.block())
+            .forceAddTag(BlockItemTags.EMERALD_ORES.block())
+            .forceAddTag(BlockItemTags.LAPIS_ORES.block())
+            .forceAddTag(BlockItemTags.REDSTONE_ORES.block())
+            .forceAddTag(BlockItemTags.COPPER_ORES.block());
     }
 }
