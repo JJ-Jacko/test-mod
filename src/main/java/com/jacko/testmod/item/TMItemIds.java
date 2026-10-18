@@ -15,6 +15,12 @@ public class TMItemIds {
     public static final ResourceKey<Item> SUSPICIOUS_SUBSTANCE = create("suspicious_substance"); 
     public static final ResourceKey<Item> ICE_ETHER = create("ice_ether"); 
     public static final ResourceKey<Item> RAW_ICE_ETHER = create("raw_ice_ether"); 
+    public static final ResourceKey<Item> ICE_ETHER_SWORD = create("ice_ether_sword"); 
+    public static final ResourceKey<Item> ICE_ETHER_SHOVEL = create("ice_ether_shovel"); 
+    public static final ResourceKey<Item> ICE_ETHER_PICKAXE = create("ice_ether_pickaxe"); 
+    public static final ResourceKey<Item> ICE_ETHER_AXE = create("ice_ether_axe"); 
+    public static final ResourceKey<Item> ICE_ETHER_HOE = create("ice_ether_hoe"); 
+    public static final ResourceKey<Item> ICE_ETHER_SPEAR = create("ice_ether_spear"); 
     public static final ResourceKey<Item> ANTHRACITE = create("anthracite"); 
     public static final ResourceKey<Item> PROSPECTOR = create("prospector"); 
     

@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class TMItemTags {
     public static final TagKey<Item> SUGER = bind("sugar");
+    public static final TagKey<Item> ICE_ETHER_TOOL_MATERIALS = bind("ice_ether_tool_materials");
     
     private static TagKey<Item> bind(String name) {
 		return TagKey.create(Registries.ITEM, TMCommon.id(name));

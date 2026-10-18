@@ -39,6 +39,12 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");
         builder.add(TMItems.ICE_ETHER, "Ice Ether");
         builder.add(TMItems.RAW_ICE_ETHER, "Raw Ice Ether");
+        builder.add(TMItems.ICE_ETHER_SWORD, "Ice Ether Sword");
+        builder.add(TMItems.ICE_ETHER_SHOVEL, "Ice Ether Shovel");
+        builder.add(TMItems.ICE_ETHER_PICKAXE, "Ice Ether Pickaxe");
+        builder.add(TMItems.ICE_ETHER_AXE, "Ice Ether Axe");
+        builder.add(TMItems.ICE_ETHER_HOE, "Ice Ether Hoe");
+        builder.add(TMItems.ICE_ETHER_SPEAR, "Ice Ether Spear");
         builder.add(TMItems.ANTHRACITE, "Anthracite");
         builder.add(TMItems.PROSPECTOR, "Prospector");
 

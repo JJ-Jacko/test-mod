@@ -42,6 +42,12 @@ public class TMModelProvider extends FabricModelProvider {
         generators.generateFlatItem(TMItems.SUSPICIOUS_SUBSTANCE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.ICE_ETHER, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.RAW_ICE_ETHER, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        generators.generateSpear(TMItems.ICE_ETHER_SPEAR);
         generators.generateFlatItem(TMItems.ANTHRACITE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.PROSPECTOR, ModelTemplates.FLAT_ITEM);
     }
