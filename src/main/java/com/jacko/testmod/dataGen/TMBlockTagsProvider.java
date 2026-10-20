@@ -76,5 +76,8 @@ public class TMBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
             .forceAddTag(BlockItemTags.LAPIS_ORES.block())
             .forceAddTag(BlockItemTags.REDSTONE_ORES.block())
             .forceAddTag(BlockItemTags.COPPER_ORES.block());
+        builder(TMBlockTags.MINEABLE_WITH_PICKAXE_AND_SHOVEL)
+            .forceAddTag(BlockTags.MINEABLE_WITH_PICKAXE)
+            .forceAddTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }

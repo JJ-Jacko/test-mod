@@ -41,6 +41,7 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.ICE_ETHER_AXE);
             output.accept(TMItems.ICE_ETHER_HOE);
             output.accept(TMItems.ICE_ETHER_SPEAR);
+            output.accept(TMItems.ICE_ETHER_PICKAXE_SHOVEL);
             output.accept(TMBlocks.ICE_ETHER_ORE);
             output.accept(TMBlocks.DEEPSLATE_ICE_ETHER_ORE);
             output.accept(TMBlocks.RAW_ICE_ETHER_BLOCK);

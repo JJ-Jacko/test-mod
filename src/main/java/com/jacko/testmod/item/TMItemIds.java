@@ -21,6 +21,7 @@ public class TMItemIds {
     public static final ResourceKey<Item> ICE_ETHER_AXE = create("ice_ether_axe"); 
     public static final ResourceKey<Item> ICE_ETHER_HOE = create("ice_ether_hoe"); 
     public static final ResourceKey<Item> ICE_ETHER_SPEAR = create("ice_ether_spear"); 
+    public static final ResourceKey<Item> ICE_ETHER_PICKAXE_SHOVEL = create("ice_ether_pickaxe_shovel"); 
     public static final ResourceKey<Item> ANTHRACITE = create("anthracite"); 
     public static final ResourceKey<Item> PROSPECTOR = create("prospector"); 
     

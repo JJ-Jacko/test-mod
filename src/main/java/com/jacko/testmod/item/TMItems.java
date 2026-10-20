@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import com.jacko.testmod.TMCommon;
 import com.jacko.testmod.item.custom.ProspectorItem;
+import com.jacko.testmod.tags.TMBlockTags;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
@@ -65,6 +66,12 @@ public class TMItems {
         TMItemIds.ICE_ETHER_SPEAR,
         Item::new,
         new Item.Properties().spear(TMToolMaterial.ICE_ETHER, 0.95F, 0.7F, 0.7F, 3.5F, 13.0F, 8.5F, 5.1F, 13.75F, 4.6F)
+    );
+    public static final Item ICE_ETHER_PICKAXE_SHOVEL = register(
+        TMItemIds.ICE_ETHER_PICKAXE_SHOVEL,
+        Item::new,
+        new Item.Properties()
+            .tool(TMToolMaterial.ICE_ETHER, TMBlockTags.MINEABLE_WITH_PICKAXE_AND_SHOVEL, 1.0F, -2.8F, 0.0F)
     );
     public static final Item ANTHRACITE = register(TMItemIds.ANTHRACITE, Item::new,
         new Item.Properties().cookingFuel(ContextIntProviders.COOKING_TIME_COAL)
