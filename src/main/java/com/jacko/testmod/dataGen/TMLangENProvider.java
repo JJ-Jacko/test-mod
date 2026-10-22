@@ -4,6 +4,7 @@ import java.util.concurrent.CompletableFuture;
 
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
+import com.jacko.testmod.item.custom.CounterItem;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -51,5 +52,6 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMItems.COUNTER, "Counter");
 
         builder.add("test_mod_items.test-mod", "Test Mod Items");
+        builder.add(CounterItem.TRANSLATION_INFO, "Used %1$s times");
     }
 }

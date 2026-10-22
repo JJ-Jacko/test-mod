@@ -17,6 +17,7 @@
   "item.test-mod.cheese": "Cheese",
   "item.test-mod.corn": "Corn",
   "item.test-mod.counter": "Counter",
+  "item.test-mod.counter.info": "Used %1$s times",
   "item.test-mod.ice_ether": "Ice Ether",
   "item.test-mod.ice_ether_axe": "Ice Ether Axe",
   "item.test-mod.ice_ether_hoe": "Ice Ether Hoe",

@@ -19,6 +19,7 @@ public class TMCommon implements ModInitializer {
 		TMItems.init();
 		TMBlocks.init();
 		TMCreativeModeTabs.init();
+		TMComponents.init();
 	}
 
 	public static Identifier id(String path) {
