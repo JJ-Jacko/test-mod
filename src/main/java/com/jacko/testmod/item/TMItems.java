@@ -3,6 +3,8 @@ package com.jacko.testmod.item;
 import java.util.function.Function;
 
 import com.jacko.testmod.TMCommon;
+import com.jacko.testmod.TMComponents;
+import com.jacko.testmod.item.component.ComponentWithTooltip;
 import com.jacko.testmod.item.custom.CounterItem;
 import com.jacko.testmod.item.custom.ProspectorItem;
 import com.jacko.testmod.tags.TMBlockTags;
@@ -86,6 +88,7 @@ public class TMItems {
         TMItemIds.COUNTER,
         CounterItem::new,
         new Item.Properties()
+            .component(TMComponents.COUNT_CLICK, new ComponentWithTooltip(0))
     );
     
     public static Item register(

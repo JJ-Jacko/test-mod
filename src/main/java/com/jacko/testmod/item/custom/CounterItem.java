@@ -1,5 +1,8 @@
 package com.jacko.testmod.item.custom;
 
+import com.jacko.testmod.TMComponents;
+import com.jacko.testmod.item.component.ComponentWithTooltip;
+
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -14,8 +17,13 @@ public class CounterItem extends Item {
 
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        ItemStack usedItem = player.getItemInHand(hand);
-        usedItem.consume(1, player);
+        if (level.isClientSide()) {
+            return InteractionResult.SUCCESS;
+        }
+
+        ItemStack stack = player.getItemInHand(hand);
+        int count = stack.getOrDefault(TMComponents.COUNT_CLICK, new ComponentWithTooltip(0)).clickCount();
+        stack.set(TMComponents.COUNT_CLICK, new ComponentWithTooltip(++count));
         
         return InteractionResult.SUCCESS;
     }
