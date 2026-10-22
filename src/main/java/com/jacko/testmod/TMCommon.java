@@ -1,7 +1,8 @@
 package com.jacko.testmod;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.fabric.api.item.v1.ItemComponentTooltipProviderRegistry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class TMCommon implements ModInitializer {
 		TMBlocks.init();
 		TMCreativeModeTabs.init();
 		TMComponents.init();
+		ItemComponentTooltipProviderRegistry.addAfter(DataComponents.DAMAGE, TMComponents.COUNT_CLICK);
 	}
 
 	public static Identifier id(String path) {
