@@ -3,6 +3,7 @@ package com.jacko.testmod.item;
 import java.util.function.Function;
 
 import com.jacko.testmod.TMCommon;
+import com.jacko.testmod.item.custom.CounterItem;
 import com.jacko.testmod.item.custom.ProspectorItem;
 import com.jacko.testmod.tags.TMBlockTags;
 
@@ -80,6 +81,11 @@ public class TMItems {
         TMItemIds.PROSPECTOR,
         ProspectorItem::new,
         new Item.Properties().durability(127)
+    );
+    public static final Item COUNTER = register(
+        TMItemIds.COUNTER,
+        CounterItem::new,
+        new Item.Properties()
     );
     
     public static Item register(

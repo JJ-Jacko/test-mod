@@ -24,6 +24,7 @@ public class TMItemIds {
     public static final ResourceKey<Item> ICE_ETHER_PICKAXE_SHOVEL = create("ice_ether_pickaxe_shovel"); 
     public static final ResourceKey<Item> ANTHRACITE = create("anthracite"); 
     public static final ResourceKey<Item> PROSPECTOR = create("prospector"); 
+    public static final ResourceKey<Item> COUNTER = create("counter"); 
     
     public static ResourceKey<Item> create(String name) {
         // Create the item key.

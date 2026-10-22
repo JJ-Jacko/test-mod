@@ -31,6 +31,7 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.SUSPICIOUS_SUBSTANCE);
             output.accept(TMItems.ANTHRACITE);
             output.accept(TMItems.PROSPECTOR);
+            output.accept(TMItems.COUNTER);
             
             output.accept(TMBlocks.CONDENSED_DIRT);
             output.accept(TMItems.ICE_ETHER);

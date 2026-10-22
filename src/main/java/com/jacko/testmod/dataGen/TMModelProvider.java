@@ -51,5 +51,6 @@ public class TMModelProvider extends FabricModelProvider {
         generators.generateSpear(TMItems.ICE_ETHER_SPEAR);
         generators.generateFlatItem(TMItems.ANTHRACITE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.PROSPECTOR, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.COUNTER, ModelTemplates.FLAT_ITEM);
     }
 }

@@ -48,6 +48,7 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMItems.ICE_ETHER_PICKAXE_SHOVEL, "Ice Ether Pickaxe Shovel");
         builder.add(TMItems.ANTHRACITE, "Anthracite");
         builder.add(TMItems.PROSPECTOR, "Prospector");
+        builder.add(TMItems.COUNTER, "Counter");
 
         builder.add("test_mod_items.test-mod", "Test Mod Items");
     }
