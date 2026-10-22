@@ -1,3 +1,5 @@
+import org.gradle.api.tasks.javadoc.Javadoc
+
 plugins {
 	id("net.fabricmc.fabric-loom")
 	`maven-publish`
@@ -57,6 +59,32 @@ tasks.jar {
 	from("LICENSE") {
 		rename { "${it}_$projectName" }
 	}
+}
+
+tasks.register<Javadoc>("javadoc-mc") {
+	group = "documentation"
+	description = "Generates Javadoc API documentation for the decompiled Minecraft sources."
+	title = "Minecraft ${providers.gradleProperty("minecraft_version").get()}"
+	dependsOn("genSources")
+	exclude(
+		"com/mojang/blaze3d/platform/MacosUtil.java",
+		"com/mojang/realmsclient/gui/screens/RealmsPdpScreen.java",
+	)
+
+	val minecraftSourcesJar = providers.provider {
+		fileTree(".gradle/loom-cache/minecraftMaven/net/minecraft") {
+			include("minecraft-merged-*/*/*-sources.jar")
+		}.singleFile
+	}
+
+	source(minecraftSourcesJar.map { zipTree(it) })
+	classpath = files(
+		tasks.compileJava.get().classpath,
+		configurations.detachedConfiguration(
+			dependencies.create("com.google.code.findbugs:jsr305:3.0.2"),
+		),
+	)
+	destinationDir = layout.buildDirectory.dir("docs/MC-doc").get().asFile
 }
 
 // configure the maven publication
