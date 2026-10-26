@@ -23,6 +23,8 @@ public class TMItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
             .add(TMItemIds.STRAWBERRY);
         builder(TMItemTags.ICE_ETHER_TOOL_MATERIALS)
             .add(TMItemIds.ICE_ETHER);
+        builder(TMItemTags.REPAIRS_ICE_ETHER_ARMOR)
+            .add(TMItemIds.ICE_ETHER);
         builder(ItemTags.SWORDS)
             .add(TMItemIds.ICE_ETHER_SWORD);
         builder(ItemTags.SHOVELS)
@@ -35,5 +37,13 @@ public class TMItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
             .add(TMItemIds.ICE_ETHER_HOE);
         builder(ItemTags.SPEARS)
             .add(TMItemIds.ICE_ETHER_SPEAR);
+        builder(ItemTags.HEAD_ARMOR)
+            .add(TMItemIds.ICE_ETHER_HELMET);
+        builder(ItemTags.CHEST_ARMOR)
+            .add(TMItemIds.ICE_ETHER_CHESTPLATE);
+        builder(ItemTags.LEG_ARMOR)
+            .add(TMItemIds.ICE_ETHER_LEGGINGS);
+        builder(ItemTags.FOOT_ARMOR)
+            .add(TMItemIds.ICE_ETHER_BOOTS);
     }
 }

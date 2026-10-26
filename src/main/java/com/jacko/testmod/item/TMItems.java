@@ -7,12 +7,14 @@ import com.jacko.testmod.TMComponents;
 import com.jacko.testmod.item.component.ComponentWithTooltip;
 import com.jacko.testmod.item.custom.CounterItem;
 import com.jacko.testmod.item.custom.ProspectorItem;
+import com.jacko.testmod.item.equipment.TMArmorMaterials;
 import com.jacko.testmod.tags.TMBlockTags;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 public class TMItems {
@@ -75,6 +77,30 @@ public class TMItems {
         Item::new,
         new Item.Properties()
             .tool(TMToolMaterial.ICE_ETHER, TMBlockTags.MINEABLE_WITH_PICKAXE_AND_SHOVEL, 1.0F, -2.8F, 0.0F)
+    );
+    public static final Item ICE_ETHER_HELMET = register(
+        TMItemIds.ICE_ETHER_HELMET,
+        Item::new,
+        new Item.Properties()
+            .humanoidArmor(TMArmorMaterials.ICE_ETHER, ArmorType.HELMET)
+    );
+    public static final Item ICE_ETHER_CHESTPLATE = register(
+        TMItemIds.ICE_ETHER_CHESTPLATE,
+        Item::new,
+        new Item.Properties()
+            .humanoidArmor(TMArmorMaterials.ICE_ETHER, ArmorType.CHESTPLATE)
+    );
+    public static final Item ICE_ETHER_LEGGINGS = register(
+        TMItemIds.ICE_ETHER_LEGGINGS,
+        Item::new,
+        new Item.Properties()
+            .humanoidArmor(TMArmorMaterials.ICE_ETHER, ArmorType.LEGGINGS)
+    );
+    public static final Item ICE_ETHER_BOOTS = register(
+        TMItemIds.ICE_ETHER_BOOTS,
+        Item::new,
+        new Item.Properties()
+            .humanoidArmor(TMArmorMaterials.ICE_ETHER, ArmorType.BOOTS)
     );
     public static final Item ANTHRACITE = register(TMItemIds.ANTHRACITE, Item::new,
         new Item.Properties().cookingFuel(ContextIntProviders.COOKING_TIME_COAL)

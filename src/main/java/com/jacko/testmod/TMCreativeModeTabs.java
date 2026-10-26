@@ -43,6 +43,10 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.ICE_ETHER_HOE);
             output.accept(TMItems.ICE_ETHER_SPEAR);
             output.accept(TMItems.ICE_ETHER_PICKAXE_SHOVEL);
+            output.accept(TMItems.ICE_ETHER_HELMET);
+            output.accept(TMItems.ICE_ETHER_CHESTPLATE);
+            output.accept(TMItems.ICE_ETHER_LEGGINGS);
+            output.accept(TMItems.ICE_ETHER_BOOTS);
             output.accept(TMBlocks.ICE_ETHER_ORE);
             output.accept(TMBlocks.DEEPSLATE_ICE_ETHER_ORE);
             output.accept(TMBlocks.RAW_ICE_ETHER_BLOCK);

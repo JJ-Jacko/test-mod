@@ -157,6 +157,32 @@ public class TMRecipesProvider extends FabricRecipeProvider {
                     .pattern("X  ")
                     .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
                     .save(output);
+                shaped(RecipeCategory.COMBAT, TMItems.ICE_ETHER_HELMET)
+                    .define('X', TMItems.ICE_ETHER)
+                    .pattern("XXX")
+                    .pattern("X X")
+                    .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
+                    .save(output);
+                shaped(RecipeCategory.COMBAT, TMItems.ICE_ETHER_CHESTPLATE)
+                    .define('X', TMItems.ICE_ETHER)
+                    .pattern("X X")
+                    .pattern("XXX")
+                    .pattern("XXX")
+                    .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
+                    .save(output);
+                shaped(RecipeCategory.COMBAT, TMItems.ICE_ETHER_LEGGINGS)
+                    .define('X', TMItems.ICE_ETHER)
+                    .pattern("XXX")
+                    .pattern("X X")
+                    .pattern("X X")
+                    .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
+                    .save(output);
+                shaped(RecipeCategory.COMBAT, TMItems.ICE_ETHER_BOOTS)
+                    .define('X', TMItems.ICE_ETHER)
+                    .pattern("X X")
+                    .pattern("X X")
+                    .unlockedBy(getHasName(TMItems.ICE_ETHER), has(TMItems.ICE_ETHER))
+                    .save(output);
                 shaped(RecipeCategory.MISC, Items.SUGAR)
                     .define('#', TMItemTags.SUGER)
                     .pattern("###")

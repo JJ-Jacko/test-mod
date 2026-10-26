@@ -1,5 +1,7 @@
 package com.jacko.testmod.dataGen;
 
+import java.util.Map;
+
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
 
@@ -8,6 +10,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.item.equipment.trim.TrimMaterials.Palette;
 
 public class TMModelProvider extends FabricModelProvider {
     public TMModelProvider(FabricPackOutput output) {
@@ -48,6 +51,19 @@ public class TMModelProvider extends FabricModelProvider {
         generators.generateFlatItem(TMItems.ICE_ETHER_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generators.generateFlatItem(TMItems.ICE_ETHER_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generators.generateFlatItem(TMItems.ICE_ETHER_PICKAXE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        generators.generateFlatItem(TMItems.ICE_ETHER_HELMET, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        generators.generateFlatItem(TMItems.ICE_ETHER_BOOTS, ModelTemplates.FLAT_ITEM);
+        // generators.generateTrimmableArmorSet(
+        //     TMItems.ICE_ETHER_HELMET,
+        //     TMItems.ICE_ETHER_CHESTPLATE,
+        //     TMItems.ICE_ETHER_LEGGINGS,
+        //     TMItems.ICE_ETHER_BOOTS,
+        //     false, Map.of(Palette.DIAMOND, Palette.DIAMOND_DARKER)
+        // );
+
         generators.generateSpear(TMItems.ICE_ETHER_SPEAR);
         generators.generateFlatItem(TMItems.ANTHRACITE, ModelTemplates.FLAT_ITEM);
         generators.generateFlatItem(TMItems.PROSPECTOR, ModelTemplates.FLAT_ITEM);
