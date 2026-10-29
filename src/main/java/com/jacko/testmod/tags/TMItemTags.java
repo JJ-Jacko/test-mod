@@ -10,6 +10,7 @@ public class TMItemTags {
     public static final TagKey<Item> SUGER = bind("sugar");
     public static final TagKey<Item> ICE_ETHER_TOOL_MATERIALS = bind("ice_ether_tool_materials");
     public static final TagKey<Item> REPAIRS_ICE_ETHER_ARMOR = bind("repairs_ice_ether_armor");
+    public static final TagKey<Item> ICE_ETHER_ARMOR = bind("ice_ether_armor");
     
     private static TagKey<Item> bind(String name) {
 		return TagKey.create(Registries.ITEM, TMCommon.id(name));

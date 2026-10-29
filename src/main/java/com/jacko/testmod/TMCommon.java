@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
+import com.jacko.testmod.util.TMArmorEffects;
 
 public class TMCommon implements ModInitializer {
 	public static final String MOD_ID = "test-mod";
@@ -21,6 +22,7 @@ public class TMCommon implements ModInitializer {
 		TMBlocks.init();
 		TMCreativeModeTabs.init();
 		TMComponents.init();
+		TMArmorEffects.init();
 		ItemComponentTooltipProviderRegistry.addAfter(DataComponents.DAMAGE, TMComponents.COUNT_CLICK);
 	}
 

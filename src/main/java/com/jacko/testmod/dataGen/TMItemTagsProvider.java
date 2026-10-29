@@ -37,6 +37,7 @@ public class TMItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
             .add(TMItemIds.ICE_ETHER_HOE);
         builder(ItemTags.SPEARS)
             .add(TMItemIds.ICE_ETHER_SPEAR);
+
         builder(ItemTags.HEAD_ARMOR)
             .add(TMItemIds.ICE_ETHER_HELMET);
         builder(ItemTags.CHEST_ARMOR)
@@ -44,6 +45,11 @@ public class TMItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
         builder(ItemTags.LEG_ARMOR)
             .add(TMItemIds.ICE_ETHER_LEGGINGS);
         builder(ItemTags.FOOT_ARMOR)
+            .add(TMItemIds.ICE_ETHER_BOOTS);
+        builder(TMItemTags.ICE_ETHER_ARMOR)
+            .add(TMItemIds.ICE_ETHER_HELMET)
+            .add(TMItemIds.ICE_ETHER_CHESTPLATE)
+            .add(TMItemIds.ICE_ETHER_LEGGINGS)
             .add(TMItemIds.ICE_ETHER_BOOTS);
     }
 }
