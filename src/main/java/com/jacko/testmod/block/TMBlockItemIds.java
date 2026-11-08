@@ -21,8 +21,12 @@ public class TMBlockItemIds {
     public static final BlockItemId ICE_ETHER_DOOR = create("ice_ether_door");
     public static final BlockItemId ICE_ETHER_TRAPDOOR = create("ice_ether_trapdoor");
     
-    private static BlockItemId create(String name) {
+    private static BlockItemId create(final String name) {
         Identifier id = TMCommon.id(name);
         return BlockItemId.create(id, id);
+    }
+
+    private static BlockItemId create(final String blockName, final String itemName) {
+        return BlockItemId.create(TMCommon.id(blockName), TMCommon.id(itemName));
     }
 }
