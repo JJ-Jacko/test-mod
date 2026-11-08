@@ -28,12 +28,10 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 public class TMBlocks {
     public static final Block CONDENSED_DIRT = register(
         TMBlockItemIds.CONDENSED_DIRT,
-        Block::new,
         BlockBehaviour.Properties.of().sound(SoundType.GLASS)
     );
     public static final Block ICE_ETHER_ORE = register(
         TMBlockItemIds.ICE_ETHER_ORE,
-        Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.STONE)
             .requiresCorrectToolForDrops()
@@ -41,7 +39,6 @@ public class TMBlocks {
     );
     public static final Block DEEPSLATE_ICE_ETHER_ORE = register(
         TMBlockItemIds.DEEPSLATE_ICE_ETHER_ORE,
-        Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.DEEPSLATE)
             .requiresCorrectToolForDrops()
@@ -49,14 +46,12 @@ public class TMBlocks {
     );
     public static final Block RAW_ICE_ETHER_BLOCK = register(
         TMBlockItemIds.RAW_ICE_ETHER_BLOCK,
-        Block::new,
         BlockBehaviour.Properties.of()
             .requiresCorrectToolForDrops()
             .strength(2.0F, 2.0F)
     );
     public static final Block ICE_ETHER_BLOCK = register(
         TMBlockItemIds.ICE_ETHER_BLOCK,
-        Block::new,
         BlockBehaviour.Properties.of()
             .sound(SoundType.METAL)
             .requiresCorrectToolForDrops()
@@ -109,23 +104,18 @@ public class TMBlocks {
     );
     
     private static Block register(
-            ResourceKey<Block> id,
-            Function<BlockBehaviour.Properties, Block> blockFactory,
-            BlockBehaviour.Properties properties
+            final ResourceKey<Block> id,
+            final Function<BlockBehaviour.Properties, Block> blockFactory,
+            final BlockBehaviour.Properties properties
     ) {
-        // Create the block instance
         Block block = blockFactory.apply(properties.setId(id));
-
-        // Register the block.
-        Registry.register(BuiltInRegistries.BLOCK, id, block);
-
-        return block;
+        return Registry.register(BuiltInRegistries.BLOCK, id, block);
     }
 
     private static Block register(
-            BlockItemId id,
-            Function<BlockBehaviour.Properties, Block> blockFactory,
-            BlockBehaviour.Properties properties
+            final BlockItemId id,
+            final Function<BlockBehaviour.Properties, Block> blockFactory,
+            final BlockBehaviour.Properties properties
     ) {
         // Create the block instance
         Block block = register(id.block(), blockFactory, properties);
@@ -135,6 +125,13 @@ public class TMBlocks {
         Registry.register(BuiltInRegistries.ITEM, id.item(), blockItem);
 
         return block;
+    }
+
+    private static Block register(
+            final BlockItemId id,
+            final BlockBehaviour.Properties properties
+    ) {
+        return register(id, Block::new, properties);
     }
 
     public static void init() {
