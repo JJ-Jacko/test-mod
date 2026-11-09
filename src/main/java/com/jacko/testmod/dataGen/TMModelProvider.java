@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class TMModelProvider extends FabricModelProvider {
     public TMModelProvider(FabricPackOutput output) {
@@ -30,6 +31,7 @@ public class TMModelProvider extends FabricModelProvider {
             .wall(TMBlocks.ICE_ETHER_WALL);
         generators.createDoor(TMBlocks.ICE_ETHER_DOOR);
         generators.createTrapdoor(TMBlocks.ICE_ETHER_TRAPDOOR);
+        generators.createCropBlock(TMBlocks.ICE_ETHERROTS, BlockStateProperties.AGE_7, 0, 0, 1, 1, 2, 2, 2, 3);
     }
 
     @Override

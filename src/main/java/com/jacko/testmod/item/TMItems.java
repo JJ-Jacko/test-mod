@@ -109,6 +109,14 @@ public class TMItems {
         new Item.Properties()
             .component(TMComponents.COUNT_CLICK, new ComponentWithTooltip(0))
     );
+    public static final Item ICE_ETHERROT = registerItem(
+        TMBlockItemIds.ICE_ETHERROT_CROP,
+        createBlockItemWithCustomItemName(TMBlocks.ICE_ETHERROTS),
+        new Item.Properties()
+            .food(TMFoods.ICE_ETHERROT, TMConsumables.ICE_ETHERROT)
+            .villagerFood(1)
+            .compostable(ContextIntProviders.COMPOSTABLE_MEDIUM)
+    );
 
     // Blocks
     public static final Item CONDENSED_DIRT = registerBlock(TMBlockItemIds.CONDENSED_DIRT, TMBlocks.CONDENSED_DIRT);
@@ -150,6 +158,14 @@ public class TMItems {
         return registerItem(id, Item::new, new Item.Properties());
     }
 
+    private static Item registerItem(
+            final BlockItemId id,
+            final Function<Item.Properties, Item> itemFactory,
+            final Item.Properties properties
+    ) {
+        return registerItem(id.item(), itemFactory, properties);
+    }
+
     private static Item registerBlock(
             final BlockItemId id,
             final Block block,
@@ -176,6 +192,10 @@ public class TMItems {
             final Block block
     ) {
         return registerBlock(id, block, BlockItem::new);
+    }
+
+    private static Function<Item.Properties, Item> createBlockItemWithCustomItemName(final Block block) {
+        return p -> new BlockItem(block, p.useItemDescriptionPrefix());
     }
 
     public static void init() {

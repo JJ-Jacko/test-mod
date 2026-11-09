@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "test-mod:block/ice_etherrots_stage0"
+  }
+}

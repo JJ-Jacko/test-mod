@@ -21,4 +21,8 @@ public class TMFoods {
         .nutrition(2)
         .saturationModifier(1.0F)
         .build();
+	public static final FoodProperties ICE_ETHERROT = new FoodProperties.Builder()
+        .nutrition(6)
+        .saturationModifier(1.2F)
+        .build();
 }

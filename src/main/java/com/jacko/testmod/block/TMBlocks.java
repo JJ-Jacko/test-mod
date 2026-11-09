@@ -9,6 +9,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
@@ -99,6 +100,11 @@ public class TMBlocks {
         TMBlockItemIds.ICE_ETHER_TRAPDOOR,
         p -> new TrapDoorBlock(BlockSetType.STONE, p),
         BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK)
+    );
+    public static final Block ICE_ETHERROTS = register(
+        TMBlockItemIds.ICE_ETHERROT_CROP,
+        IceEtherrotBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.CARROTS)
     );
     
     private static Block register(

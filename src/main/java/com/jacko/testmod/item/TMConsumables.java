@@ -28,4 +28,12 @@ public class TMConsumables {
             ), 0.8F
         ))
         .build();
+    public static final Consumable ICE_ETHERROT = Consumables.defaultFood()
+        .onConsume(new ApplyStatusEffectsConsumeEffect(
+            List.of(
+                new MobEffectInstance(MobEffects.SPEED, 20 * 20, 1),
+                new MobEffectInstance(MobEffects.JUMP_BOOST, 20 * 20, 1)
+            )
+        ))
+        .build();
 }
