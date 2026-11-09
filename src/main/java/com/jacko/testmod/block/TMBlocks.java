@@ -8,8 +8,6 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.DoorBlock;
@@ -117,14 +115,7 @@ public class TMBlocks {
             final Function<BlockBehaviour.Properties, Block> blockFactory,
             final BlockBehaviour.Properties properties
     ) {
-        // Create the block instance
-        Block block = register(id.block(), blockFactory, properties);
-
-        // Create the block item instance
-        BlockItem blockItem = new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix().setId(id.item()));
-        Registry.register(BuiltInRegistries.ITEM, id.item(), blockItem);
-
-        return block;
+        return register(id.block(), blockFactory, properties);
     }
 
     private static Block register(

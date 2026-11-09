@@ -1,9 +1,12 @@
 package com.jacko.testmod.item;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 import com.jacko.testmod.TMCommon;
 import com.jacko.testmod.TMComponents;
+import com.jacko.testmod.block.TMBlockItemIds;
+import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.component.ComponentWithTooltip;
 import com.jacko.testmod.item.custom.CounterItem;
 import com.jacko.testmod.item.custom.ProspectorItem;
@@ -12,13 +15,16 @@ import com.jacko.testmod.tags.TMBlockTags;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
+import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 public class TMItems {
+    // Items
     public static final Item CHEESE = registerItem(
         TMItemIds.CHEESE,
         new Item.Properties().food(TMFoods.CHEESE, TMConsumables.CHEESE)
@@ -103,8 +109,24 @@ public class TMItems {
         new Item.Properties()
             .component(TMComponents.COUNT_CLICK, new ComponentWithTooltip(0))
     );
+
+    // Blocks
+    public static final Item CONDENSED_DIRT = registerBlock(TMBlockItemIds.CONDENSED_DIRT, TMBlocks.CONDENSED_DIRT);
+    public static final Item ICE_ETHER_ORE = registerBlock(TMBlockItemIds.ICE_ETHER_ORE, TMBlocks.ICE_ETHER_ORE);
+    public static final Item DEEPSLATE_ICE_ETHER_ORE = registerBlock(TMBlockItemIds.DEEPSLATE_ICE_ETHER_ORE, TMBlocks.DEEPSLATE_ICE_ETHER_ORE);
+    public static final Item RAW_ICE_ETHER_BLOCK = registerBlock(TMBlockItemIds.RAW_ICE_ETHER_BLOCK, TMBlocks.RAW_ICE_ETHER_BLOCK);
+    public static final Item ICE_ETHER_BLOCK = registerBlock(TMBlockItemIds.ICE_ETHER_BLOCK, TMBlocks.ICE_ETHER_BLOCK);
+    public static final Item ICE_ETHER_STAIRS = registerBlock(TMBlockItemIds.ICE_ETHER_STAIRS, TMBlocks.ICE_ETHER_STAIRS);
+    public static final Item ICE_ETHER_SLAB = registerBlock(TMBlockItemIds.ICE_ETHER_SLAB, TMBlocks.ICE_ETHER_SLAB);
+    public static final Item ICE_ETHER_BUTTON = registerBlock(TMBlockItemIds.ICE_ETHER_BUTTON, TMBlocks.ICE_ETHER_BUTTON);
+    public static final Item ICE_ETHER_PRESSURE_PLATE = registerBlock(TMBlockItemIds.ICE_ETHER_PRESSURE_PLATE, TMBlocks.ICE_ETHER_PRESSURE_PLATE);
+    public static final Item ICE_ETHER_FENCE = registerBlock(TMBlockItemIds.ICE_ETHER_FENCE, TMBlocks.ICE_ETHER_FENCE);
+    public static final Item ICE_ETHER_FENCE_GATE = registerBlock(TMBlockItemIds.ICE_ETHER_FENCE_GATE, TMBlocks.ICE_ETHER_FENCE_GATE);
+    public static final Item ICE_ETHER_WALL = registerBlock(TMBlockItemIds.ICE_ETHER_WALL, TMBlocks.ICE_ETHER_WALL);
+    public static final Item ICE_ETHER_DOOR = registerBlock(TMBlockItemIds.ICE_ETHER_DOOR, TMBlocks.ICE_ETHER_DOOR);
+    public static final Item ICE_ETHER_TRAPDOOR = registerBlock(TMBlockItemIds.ICE_ETHER_TRAPDOOR, TMBlocks.ICE_ETHER_TRAPDOOR);
     
-    public static Item registerItem(
+    private static Item registerItem(
         final ResourceKey<Item> id,
         final Function<Item.Properties, Item> itemFactory,
         final Item.Properties properties
@@ -126,6 +148,34 @@ public class TMItems {
 
     private static Item registerItem(final ResourceKey<Item> id) {
         return registerItem(id, Item::new, new Item.Properties());
+    }
+
+    private static Item registerBlock(
+            final BlockItemId id,
+            final Block block,
+            final BiFunction<Block, Item.Properties, Item> itemFactory,
+            final Item.Properties properties
+    ) {
+        return registerItem(
+            id.item(),
+            p -> itemFactory.apply(block, p),
+            properties.useBlockDescriptionPrefix().requiredFeatures(block.requiredFeatures())
+        );
+    }
+
+    private static Item registerBlock(
+            final BlockItemId id,
+            final Block block,
+            final BiFunction<Block, Item.Properties, Item> itemFactory
+    ) {
+        return registerBlock(id, block, itemFactory, new Item.Properties());
+    }
+
+    private static Item registerBlock(
+            final BlockItemId id,
+            final Block block
+    ) {
+        return registerBlock(id, block, BlockItem::new);
     }
 
     public static void init() {

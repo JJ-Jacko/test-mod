@@ -1,6 +1,5 @@
 package com.jacko.testmod;
 
-import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -33,7 +32,7 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.PROSPECTOR);
             output.accept(TMItems.COUNTER);
             
-            output.accept(TMBlocks.CONDENSED_DIRT);
+            output.accept(TMItems.CONDENSED_DIRT);
             output.accept(TMItems.ICE_ETHER);
             output.accept(TMItems.RAW_ICE_ETHER);
             output.accept(TMItems.ICE_ETHER_SWORD);
@@ -47,19 +46,19 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.ICE_ETHER_CHESTPLATE);
             output.accept(TMItems.ICE_ETHER_LEGGINGS);
             output.accept(TMItems.ICE_ETHER_BOOTS);
-            output.accept(TMBlocks.ICE_ETHER_ORE);
-            output.accept(TMBlocks.DEEPSLATE_ICE_ETHER_ORE);
-            output.accept(TMBlocks.RAW_ICE_ETHER_BLOCK);
-            output.accept(TMBlocks.ICE_ETHER_BLOCK);
-            output.accept(TMBlocks.ICE_ETHER_STAIRS);
-            output.accept(TMBlocks.ICE_ETHER_SLAB);
-            output.accept(TMBlocks.ICE_ETHER_BUTTON);
-            output.accept(TMBlocks.ICE_ETHER_PRESSURE_PLATE);
-            output.accept(TMBlocks.ICE_ETHER_FENCE);
-            output.accept(TMBlocks.ICE_ETHER_FENCE_GATE);
-            output.accept(TMBlocks.ICE_ETHER_WALL);
-            output.accept(TMBlocks.ICE_ETHER_DOOR);
-            output.accept(TMBlocks.ICE_ETHER_TRAPDOOR);
+            output.accept(TMItems.ICE_ETHER_ORE);
+            output.accept(TMItems.DEEPSLATE_ICE_ETHER_ORE);
+            output.accept(TMItems.RAW_ICE_ETHER_BLOCK);
+            output.accept(TMItems.ICE_ETHER_BLOCK);
+            output.accept(TMItems.ICE_ETHER_STAIRS);
+            output.accept(TMItems.ICE_ETHER_SLAB);
+            output.accept(TMItems.ICE_ETHER_BUTTON);
+            output.accept(TMItems.ICE_ETHER_PRESSURE_PLATE);
+            output.accept(TMItems.ICE_ETHER_FENCE);
+            output.accept(TMItems.ICE_ETHER_FENCE_GATE);
+            output.accept(TMItems.ICE_ETHER_WALL);
+            output.accept(TMItems.ICE_ETHER_DOOR);
+            output.accept(TMItems.ICE_ETHER_TRAPDOOR);
         }))
         .build();
     
