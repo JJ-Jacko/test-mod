@@ -26,6 +26,7 @@ public class TMCreativeModeTabs {
             output.accept(TMItems.CORN);
             output.accept(TMItems.POISONOUS_APPLE);
             output.accept(TMItems.STRAWBERRY);
+            output.accept(TMItems.STRAWBERRY_SEEDS);
             output.accept(TMItems.ICE_ETHERROT);
             output.accept(TMItems.QUARK_GLUON_PLASMA);
             output.accept(TMItems.SUSPICIOUS_SUBSTANCE);

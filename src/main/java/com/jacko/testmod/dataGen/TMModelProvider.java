@@ -32,6 +32,7 @@ public class TMModelProvider extends FabricModelProvider {
         generators.createDoor(TMBlocks.ICE_ETHER_DOOR);
         generators.createTrapdoor(TMBlocks.ICE_ETHER_TRAPDOOR);
         generators.createCropBlock(TMBlocks.ICE_ETHERROTS, BlockStateProperties.AGE_7, 0, 0, 1, 1, 2, 2, 2, 3);
+        generators.createCropBlock(TMBlocks.STRAWBERRIES, BlockStateProperties.AGE_5, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

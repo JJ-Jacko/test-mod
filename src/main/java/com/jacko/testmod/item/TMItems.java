@@ -37,10 +37,6 @@ public class TMItems {
         TMItemIds.POISONOUS_APPLE,
         new Item.Properties().food(TMFoods.POISONOUS_APPLE, TMConsumables.POISONOUS_APPLE)
     );
-    public static final Item STRAWBERRY = registerItem(
-        TMItemIds.STRAWBERRY,
-        new Item.Properties().food(TMFoods.STRAWBERRY)
-    );
     public static final Item QUARK_GLUON_PLASMA = registerItem(TMItemIds.QUARK_GLUON_PLASMA);
     public static final Item SUSPICIOUS_SUBSTANCE = registerItem(TMItemIds.SUSPICIOUS_SUBSTANCE);
     public static final Item ICE_ETHER = registerItem(TMItemIds.ICE_ETHER);
@@ -115,6 +111,18 @@ public class TMItems {
         new Item.Properties()
             .food(TMFoods.ICE_ETHERROT, TMConsumables.ICE_ETHERROT)
             .villagerFood(1)
+            .compostable(ContextIntProviders.COMPOSTABLE_MEDIUM)
+    );
+    public static final Item STRAWBERRY_SEEDS = registerItem(
+        TMBlockItemIds.STRAWBERRY_CROP,
+        createBlockItemWithCustomItemName(TMBlocks.STRAWBERRIES),
+        new Item.Properties()
+            .compostable(ContextIntProviders.COMPOSTABLE_LOW)
+    );
+    public static final Item STRAWBERRY = registerItem(
+        TMItemIds.STRAWBERRY,
+        new Item.Properties()
+            .food(TMFoods.STRAWBERRY)
             .compostable(ContextIntProviders.COMPOSTABLE_MEDIUM)
     );
 

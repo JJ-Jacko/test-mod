@@ -37,6 +37,7 @@ public class TMLangENProvider extends FabricLanguageProvider {
         builder.add(TMItems.CORN, "Corn");
         builder.add(TMItems.POISONOUS_APPLE, "Poisonous Apple");
         builder.add(TMItems.STRAWBERRY, "Strawberry");
+        builder.add(TMItems.STRAWBERRY_SEEDS, "Strawberry Seeds");
         builder.add(TMItems.ICE_ETHERROT, "Ice Etherrot");
         builder.add(TMItems.QUARK_GLUON_PLASMA, "Quark Gluon Plasma");
         builder.add(TMItems.SUSPICIOUS_SUBSTANCE, "Suspicious Substance");

@@ -1,6 +1,7 @@
 package com.jacko.testmod.dataGen;
 
 import com.jacko.testmod.block.IceEtherrotBlock;
+import com.jacko.testmod.block.StrawberryBlock;
 import com.jacko.testmod.block.TMBlocks;
 import com.jacko.testmod.item.TMItems;
 
@@ -64,6 +65,13 @@ public class TMBlockLootTableProvider extends FabricBlockLootSubProvider {
 							.add(LootItem.lootTableItem(TMItems.ICE_ETHERROT).apply(ApplyBonusCount.addBonusBinomialDistributionCount(this.enchantments.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3)))
 					)
 			)
+		);
+        LootItemCondition.Builder isStrawberryMaxAge = MatchBlock.blockMatches(
+			this.blocks, TMBlocks.STRAWBERRIES, StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryBlock.AGE, 5)
+		);
+        add(
+			TMBlocks.STRAWBERRIES,
+			this.createCropDrops(TMBlocks.STRAWBERRIES, TMItems.STRAWBERRY, TMItems.STRAWBERRY_SEEDS, isStrawberryMaxAge)
 		);
     }
 

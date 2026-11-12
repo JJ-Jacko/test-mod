@@ -23,6 +23,8 @@ import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 public class TMBlocks {
     public static final Block CONDENSED_DIRT = register(
@@ -105,6 +107,17 @@ public class TMBlocks {
         TMBlockItemIds.ICE_ETHERROT_CROP,
         IceEtherrotBlock::new,
         BlockBehaviour.Properties.ofFullCopy(Blocks.CARROTS)
+    );
+    public static final Block STRAWBERRIES = register(
+        TMBlockItemIds.STRAWBERRY_CROP,
+        StrawberryBlock::new,
+        BlockBehaviour.Properties.of()
+            .mapColor(state -> state.getValue(StrawberryBlock.AGE) >= 4 ? MapColor.COLOR_RED : MapColor.PLANT)
+			.noCollision()
+			.randomTicks()
+			.instabreak()
+			.sound(SoundType.CROP)
+			.pushReaction(PushReaction.POPPED)
     );
     
     private static Block register(
